@@ -4,3 +4,7 @@ div.center {
   align-items: center;
   height: 100vh;
 }
+body {
+  background-color: #1b1b1b;
+  color: #ffffff;
+}
