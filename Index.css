@@ -24,3 +24,6 @@ div.nexttot {
 div.nexttop {
   text-align: left;
 }
+html {
+  scroll-behavior: smooth;
+}
