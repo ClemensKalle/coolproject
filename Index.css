@@ -1,0 +1,26 @@
+div.center {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 100vh;
+  font-size:2.5vmax;
+  background-image:url("Pictures/FrogOnLillypad.JPG");
+  background-size: 100%;
+  color: rgb(255, 0, 0);
+}
+body {
+  background-color: #1b1b1b;
+  color: #ffffff;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+div.nexttot {
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1%;
+  width: 100%;
+}
+div.nexttop {
+  text-align: left;
+}
