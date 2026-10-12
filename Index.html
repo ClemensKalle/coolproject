@@ -7,21 +7,29 @@
     <title>Home</title>
 </head>
     <body>
-        <div class="center" style="font-family:'Molgan', Tahoma, Geneva, Verdana, sans-serif, sans-serif",>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        <div class="titel" style="font-family:'Molgan', Tahoma, Geneva, Verdana, sans-serif, sans-serif">
             <h1>Pinggography</h1>
         </div>
-<br>
+        <br>
     <div class="section">
-        <div class="nexttot">
+        <div class="nextot">
            <div class="imageanimated">
             <div class="fromleft">
                 <picture>   
-                    <source src="Pictures/condor.JPG" type="image/jpeg">
+                    <source srcset="Pictures/condor.JPG" type="image/jpeg">
                     <img src="Pictures/condor.JPG" style="width: 50vh; height: auto; border: 5px solid chocolate">
                 </picture>
                 </div>
             </div>
-
+        </div>
             
         <div class="textanimated">     
             <div class="nextop">
@@ -33,39 +41,48 @@
             </div>
         </div>
 
-            
-        <div class="section">   
-            <div class="nextop">
-                <div class="textanimated">
-                    <div class="fromleft">
-                    <h2>I photography Cats, Planes, Landscpaes, Flowers, almost everything. I love taking stock like pictures and using them as my screensaver ont the TV</h2>
+        <div class="bottomtextandimage">   
+            <div class="section">   
+                <div class="nextop">
+                    <div class="textanimated">
+                        <div class="fromleft">
+                        <h2>I photography Cats, Planes, Landscpaes, Flowers, almost everything. I love taking stock like pictures and using them as my screensaver ont the TV</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="imageanimated">
+                    <div class="fromright">
+                    <picture>
+                        <source srcset="Pictures/orangecat.JPG" type="image/jpeg">
+                        <img align="right"; src="Pictures/orangecat.JPG" style="width: 25vh; height: auto; border: 5px solid chocolate">
+                    </picture>
                     </div>
                 </div>
             </div>
-            <div class="imageanimated">
-                <div class="fromright">
-                <picture>
-                    <source src="Pictures/orangecat.JPG" type="image/jpeg">
-                    <img align="right"; src="Pictures/orangecat.JPG" style="width: 25vh; height: auto; border: 5px solid chocolate">
-                </picture>
-                </div>
-            </div>
-
-        !<script>
+        </div> 
+        <script>
             document.addEventListener('DOMContentLoaded', () => {
-                const sections = document.querySelectorAll('.section');
+                const elements = document.querySelectorAll('.fromleft, .fromright');
+                
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
-                            const text = entry.target.querySelector('.textanimated');
-                            const image = entry.target.querySelector('.imageanimated');
-                            if (text) text.classList.add('textanimatedon');
-                            if (image) image.classList.add('imageanimatedon');
-                
-                    }        
-                });
-            }, { threshold: 0.2 });
-            sections.forEach(section => observer.observer(section));
+                            entry.target.classList.add('visible')
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.15});
+                sections.forEach(el => observer.observe(el));
+            });
+        </script>
+        <script>
+            window.addEventListener('scroll', () => {
+                const navbar = document.getElementById('navbar');
+                if (window.scrollY > 100) {
+                    navbar.classList.add('visible');
+                } else {
+                    navbar.classList.remove('visible');
+                }
             });
         </script>
     </body>

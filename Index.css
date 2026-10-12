@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Molgan';
-  src: url('Fonts/Molgan.otf') format('truetype');
+  src: url('Fonts/Molgan.otf') format('opentype');
 }
-div.center {
+div.titel {
   display: flex;
   justify-content: center;
   align-items:center;
@@ -10,7 +10,8 @@ div.center {
   font-size:2.5vmax;
   background-image:url("Pictures/FrogOnLillypad.JPG");
   background-size: 100%;
-  color: rgb(255, 0, 0);
+  color: rgb(27, 97, 0);
+  text-shadow:10px 10px 10px rgb(27, 97, 0);
 }
 body {
   background-color: #1b1b1b;
@@ -21,6 +22,7 @@ body {
   margin: 0;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  font-family: Arial, Helvetica, sans-serif;
 }
 div.nexttot {
   display:flex;
@@ -29,47 +31,86 @@ div.nexttot {
   gap: 1%;
   width: 100%;
 }
-div.nexttop {
+div.nextop {
   text-align: left;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-!.fromleft {
+.fromleft {
   opacity: 0;
-  transform: translateX(-100px);
-  transition: opacity 1.5s ease, transform 1.5s ease;
+  transform: translateX(-80px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
 }
-!.fromright {
+.fromright {
   opacity: 0;
-  transform: translateX(100px);
-  transition: opacity 1.5s ease, transform 1.5s ease;
+  transform: translateX(80px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
 }
-!.fromleft.visible,
-!.fromright.visible {
+.fromleft.visible,
+.fromright.visible,
+.textanimated.visible,
+.imageanimated.visible {
   opacity: 1;
   transform: translateX(0);
 }
-!.section {
+.section {
   padding: 2rem 0;
   min-height: 70vh;
 }
-!.textanimated {
+.textanimated {
   opacity: 0;
   transform: translateX(-50px);
   transition: opacity 1s ease, transform 1s ease;
 }
-!.textanimatedon {
+.textanimatedon {
   opacity: 1;
   transform: translateX(0)
 }
-!.imageanimated {
+.imageanimated {
   opacity: 0;
   transform: translateX(50px);
   transition: opacity 1s ease, transform 1s ease;
 }
-!.imageanimatedon {
+.imageanimatedon {
   padding: 2rem;
   min-height: 2rem;
+}
+.bottomtextandimage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0e0e0e;
+  color: white;
+  padding: 1rem;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding:0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+#navbar.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
