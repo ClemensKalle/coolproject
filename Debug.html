@@ -7,12 +7,13 @@
     <title>Home</title>
 </head>
     <body>
-        <nav id="navbar">
+        <nav id="navbar" >
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Debug.html">_</a></li>
             </ul>
         </nav>
         <div class="titel" style="font-family:'Molgan', Tahoma, Geneva, Verdana, sans-serif, sans-serif">
@@ -21,7 +22,7 @@
         <br>
     <div class="section">
         <div class="nextot">
-           <div class="imageanimated">
+
             <div class="fromleft">
                 <picture>   
                     <source srcset="Pictures/condor.JPG" type="image/jpeg">
@@ -31,7 +32,7 @@
             </div>
         </div>
             
-        <div class="textanimated">     
+ 
             <div class="nextop">
                 <div class="fromright">
                     <h2>
@@ -44,13 +45,13 @@
         <div class="bottomtextandimage">   
             <div class="section">   
                 <div class="nextop">
-                    <div class="textanimated">
+
                         <div class="fromleft">
                         <h2>I photography Cats, Planes, Landscpaes, Flowers, almost everything. I love taking stock like pictures and using them as my screensaver ont the TV</h2>
                         </div>
-                    </div>
+
                 </div>
-                <div class="imageanimated">
+
                     <div class="fromright">
                     <picture>
                         <source srcset="Pictures/orangecat.JPG" type="image/jpeg">
@@ -72,15 +73,23 @@
                         }
                     });
                 }, { threshold: 0.15});
-                sections.forEach(el => observer.observe(el));
+                elements.forEach(el => observer.observe(el));
             });
         </script>
         <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const navbar = document.getElementById('navbar');
+                if (sessionStorage.getItem('fromInternalPage') === 'true') {
+                    navbar.classList.add('visible');
+                    sessionStorage.removeItem('fromInternalPage');
+                }
+            })
+
             window.addEventListener('scroll', () => {
                 const navbar = document.getElementById('navbar');
-                if (window.scrollY > 100) {
+                if (window.scrollY > window.innerHeight) {
                     navbar.classList.add('visible');
-                } else {
+                } else if (!fromInternalPage) {
                     navbar.classList.remove('visible');
                 }
             });

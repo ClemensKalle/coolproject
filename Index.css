@@ -57,7 +57,7 @@ div.nextop {
 }
 .section {
   padding: 2rem 0;
-  min-height: 70vh;
+  min-height: auto;
 }
 .textanimated {
   opacity: 0;
@@ -113,4 +113,9 @@ div.nextop {
 #navbar.visible {
   opacity: 1;
   transform: translateY(0);
+}
+center {
+  display: flex;
+  justify-content: center;
+  align-items:center;
 }
