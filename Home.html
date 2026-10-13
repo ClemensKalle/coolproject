@@ -20,12 +20,13 @@
             <h1>Pinggography</h1>
         </div>
         <br>
-    <div class="section">
+
+        <div class="section">
         <div class="nexttot">
             <div class="fromleft">
                 <picture>   
                     <source srcset="Pictures/condor.JPG" type="image/jpeg">
-                    <img src="Pictures/condor.JPG" style="width: 50vh; height: auto; border: 5px solid chocolate">
+                    <img src="Pictures/condor.JPG" style="width: 50vh; height: auto; border: 5px solid rgb(37, 37, 37)">
                 </picture>
                 </div>
                 <div class="fromright">
@@ -44,12 +45,12 @@
                     <div class="fromright">
                     <picture>
                         <source srcset="Pictures/orangecat.JPG" type="image/jpeg">
-                        <img align="right"; src="Pictures/orangecat.JPG" style="width: 25vh; height: auto; border: 5px solid chocolate">
+                        <img align="right"; src="Pictures/orangecat.JPG" style="width: 25vh; height: auto; border: 5px solid rgb(37, 37, 37)">
                     </picture>
                     </div>
                 </div>
-            </div>
 
+        </div>
         <script>
             document.addEventListener('DOMContentLoaded', () => {
                 const elements = document.querySelectorAll('.fromleft, .fromright');
@@ -82,6 +83,15 @@
                     navbar.classList.remove('visible');
                 }
             });
+        </script>
+        <script>
+            function getScrollPercent() {
+                var h = document.documentElement,
+                    b = document.body,
+                    st = 'scrollTop',
+                    sh = 'scrollHeight';
+                return (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+            }
         </script>
     </body>
 </html>

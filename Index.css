@@ -10,8 +10,8 @@ div.titel {
   font-size:2.5vmax;
   background-image:url("Pictures/FrogOnLillypad.JPG");
   background-size: 100%;
-  color: rgb(27, 97, 0);
-  text-shadow:10px 10px 10px rgb(27, 97, 0);
+  color: rgb(61, 37, 0);
+  text-shadow:0px 0px 10px rgb(255, 255, 255);
 }
 body {
   background-color: #1b1b1b;
@@ -28,7 +28,7 @@ div.nexttot {
   display:flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 1%;
+  gap: 3%;
   width: 100%;
 }
 div.nextop {
@@ -40,13 +40,13 @@ div.nextop {
 
 .fromleft {
   opacity: 0;
-  transform: translateX(-80px);
-  transition: opacity 1.2s ease, transform 1.2s ease;
+  transform: translateX(-200px);
+  transition: opacity 2s ease, transform 2s ease;
 }
 .fromright {
   opacity: 0;
-  transform: translateX(80px);
-  transition: opacity 1.2s ease, transform 1.2s ease;
+  transform: translateX(200px);
+  transition: opacity 2s ease, transform 2s ease;
 }
 .fromleft.visible,
 .fromright.visible,
@@ -62,7 +62,7 @@ div.nextop {
 .textanimated {
   opacity: 0;
   transform: translateX(-50px);
-  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 2s ease, transform 2s ease;
 }
 .textanimatedon {
   opacity: 1;
@@ -71,7 +71,7 @@ div.nextop {
 .imageanimated {
   opacity: 0;
   transform: translateX(50px);
-  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 2s ease, transform 2s ease;
 }
 .imageanimatedon {
   padding: 2rem;
@@ -116,6 +116,8 @@ div.nextop {
 }
 center {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items:center;
+  gap: 2rem;
+  padding: 2rem;
 }
