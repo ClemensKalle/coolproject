@@ -37,7 +37,6 @@ div.nextop {
   align-items: center;
   justify-content: flex-end;
 }
-
 .fromleft {
   opacity: 0;
   transform: translateX(-200px);

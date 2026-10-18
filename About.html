@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Index.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <title>About</title>
 </head>
-    <body style="padding-top: 4rem">
+    <body>
         <nav id="navbar" class="visible">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -15,7 +15,91 @@
                 <li><a href="About.html">About</a></li>
             </ul>
         </nav>
+        <div class="section">
+            <div class="nexttot">
+                <div class="fromleft">
+                    <picture>   
+                        <source srcset="Pictures/condor.jxl" type="image/jxl">
+                        <img src="Pictures/condor.jxl" style="width: 50vh; height: auto; border: 5px solid rgb(37, 37, 37)">
+                    </picture>
+                    </div>
+                    <div class="fromright">
+                        <h2>
+                            Hello my name is Clemens also known as Pinggography and I do photography, it really started as a child, when we had first some cheaper Digital Cameras and later a Sony DSC HX-60, a few years later I take photos on my S21 Ultra in Pro  mode and get used to setting my focus and exposure manually. Later at the wedding of my Cousin I talk with the hired Photographer, shes really nice and I thought, wouldnt it be nice to finally have a real camera, I sarched for weeks and decided, it will be a Alpha 6000, in the time from buying and this thought there were months and in the time between I found the DSC HX-60 again, with it I took wonderful pictures like the Condor next to this text! And thats how I got here!
+                        </h2>
+                </div>
+            </div>
+        </div>
+        <div class="section">   
+            <div class="nextop">
+                <div class="fromleft">
+                    <h2>I photography Cats, Planes, Landscpaes, Flowers, almost everything. I love taking stock like pictures and using them as my screensaver on the TV. I want to start selling Stock Photos soon so I can have a little bit of passive income when I dont get paid to shoot someone at the moment. Maybe Im gonna get monetized on Instagram someday or get sponsored by Sony or Canon.</h2>
+                </div>
+                <div class="fromright">
+                    <picture>
+                        <source srcset="Pictures/orangecat.jxl" type="image/jxl">
+                        <img src="Pictures/orangecat.jxl" style="width: 27.5vh; height: auto; border: 5px solid rgb(37, 37, 37)">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="nexttot">
+                <div class="fromleft">
+                    <picture>   
+                        <source srcset="Pictures/FlowersPurple.jxl" type="image/jxl">
+                        <img src="Pictures/FlowersPurple.jxl" style="width: 50vh; height: auto; border: 5px solid rgb(37, 37, 37)">
+                    </picture>
+                    </div>
+                    <div class="fromright">
+                        <h2>Heres is gonna be a Text about something I dont know about what its just a text about something dont ask me what is gonna be here, remind me that I still have to add links to my socials, will you? thanks mate for reminding me. I love terra its such a cool project and I really like it thanks to Merlin for telling me that it excists! </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
 <h4 style="text-align: right;">©Pinggography. Alle Rechte vorbehalten.</h4>
-        <script>sessionStorage.setItem('fromInternalPage', 'true');</script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const elements = document.querySelectorAll('.fromleft, .fromright');
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible')
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.15});
+                elements.forEach(el => observer.observe(el));
+            });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const navbar = document.getElementById('navbar');
+                if (sessionStorage.getItem('fromInternalPage') === 'true') {
+                    navbar.classList.add('visible');
+                    sessionStorage.removeItem('fromInternalPage');
+                }
+            })
+
+            window.addEventListener('scroll', () => {
+                const navbar = document.getElementById('navbar');
+                if (window.scrollY > 500) {
+                    navbar.classList.add('visible');
+                } else if (!fromInternalPage) {
+                    navbar.classList.remove('visible');
+                }
+            });
+        </script>
+        <script>
+            function getScrollPercent() {
+                var h = document.documentElement,
+                    b = document.body,
+                    st = 'scrollTop',
+                    sh = 'scrollHeight';
+                return (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+            }
+        </script>
     </body>
 </html>
