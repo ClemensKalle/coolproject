@@ -13,7 +13,6 @@
                 <li><a href="Portfolio.html">Portfolio</a></li>
                 <li><a href="Contact.html">Contact</a></li>
                 <li><a href="About.html">About</a></li>
-                <li><a href="Debug.html">_</a></li>
             </ul>
         </nav>
         <div class="titel" style="font-family:'Molgan', Tahoma, Geneva, Verdana, sans-serif, sans-serif">
@@ -43,16 +42,17 @@
                 <div class="fromright">
                     <picture>
                         <source srcset="Pictures/orangecat.jxl" type="image/jxl">
-                        <img src="Pictures/orangecat.jxl" style="width: 25vh; height: auto; border: 5px solid rgb(37, 37, 37)">
+                        <img src="Pictures/orangecat.jxl" style="width: 27.5vh; height: auto; border: 5px solid rgb(37, 37, 37)">
                     </picture>
                 </div>
+            </div>
         </div>
         <div class="section">
             <div class="nexttot">
                 <div class="fromleft">
                     <picture>   
-                        <source srcset="Pictures/Leave.jxl" type="image/jxl">
-                        <img src="Pictures/Leave.jxl" style="width: 25vh; height: auto; border: 5px solid rgb(37, 37, 37)">
+                        <source srcset="Pictures/FlowersPurple.jxl" type="image/jxl">
+                        <img src="Pictures/FlowersPurple.jxl" style="width: 50vh; height: auto; border: 5px solid rgb(37, 37, 37)">
                     </picture>
                     </div>
                     <div class="fromright">
@@ -63,6 +63,8 @@
                 </div>
             </div>
         </div>
+<h4 style="text-align: right;">©Pinggography. Alle Rechte vorbehalten.</h4>
+
         <script>
             document.addEventListener('DOMContentLoaded', () => {
                 const elements = document.querySelectorAll('.fromleft, .fromright');
@@ -89,7 +91,7 @@
 
             window.addEventListener('scroll', () => {
                 const navbar = document.getElementById('navbar');
-                if (window.scrollY > 600) { //note to me: replace that when the page is long enough to use window.innerHeight//
+                if (window.scrollY > 500) {
                     navbar.classList.add('visible');
                 } else if (!fromInternalPage) {
                     navbar.classList.remove('visible');
