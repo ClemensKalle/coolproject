@@ -56,4 +56,11 @@ div.image {
   text-align: center;
   font-family: 'Molgan';
   src: url('Fonts/Molgan.otf') format('opentype');
+  font-size: xx-large;
+}
+.cathegory img {
+  width: auto; 
+  height: 23vh; 
+  border: 5px solid rgb(255, 255, 255); 
+  border-bottom: 15px solid rgb(255, 255, 255);
 }
