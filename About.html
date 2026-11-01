@@ -15,110 +15,13 @@
                 <li><a href="About.html">About</a></li>
             </ul>
         </nav>
-        <div class="section">
-            <div class="nexttot">
-                <div class="fromleft">
-                    <picture>   
-                        <source srcset="Pictures/condor.jxl" type="image/jxl">
-                        <img src="Pictures/condor.jxl" style="width: 50vh; height: auto; border: 5px solid rgb(37, 37, 37)">
-                    </picture>
-                    </div>
-                    <div class="fromright">
-                        <h2>
-                            Hello, my name is Clemens, also known as Pinggography and I am  a Hobby photographer. I also post some of my taken pictures on Instagram and a almost every good one on my Website.
-                        </h2>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="nextop">
-                <div class="fromleft">
-                    <h2>
-                        I mostly shoot on Sony but im open to any brand! My plans for the future of me as a photographer is publishing stock photos on various plattforms and being an event photographer.
-                    </h2>
-                </div>
-                <div class="fromright">
-                    <picture>
-                        <source srcset="Pictures/orangecat.jxl" type="image/jxl">
-                        <img src="Pictures/orangecat.jxl" style="width: 27.5vh; height: auto; border: 5px solid rgb(37, 37, 37)">
-                    </picture>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="nexttot">
-                <div class="fromleft">
-                    <picture>
-                        <source srcset="Pictures/fiat.jxl" type="image/jxl">
-                        <img src="Pictures/fiat.jxl" style="width: 27.5vh; height: auto; border: 5px solid rgb(37, 37, 37)">
-                    </picture>
-                    </div>
-                    <div class="fromright">
-                        <h2>
-                            I mostly photograph Planes, Cars and Landscapes but I also like take some casual vacations photography.
-                        </h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="nextop">
-                <div class="fromleft">
-                    <h2>
-                        In my freetime I like to read, code and playing Minecraft with my friends! I am also part of a Robotics Team where I do some marketing, B2B, 3d modelling and programming. 
-                    </h2>
-                </div>
-                <div class="fromright">
-                    <picture>
-                        <source srcset="Pictures/nonstrum.jxl" type="image/jxl">
-                        <img src="Pictures/nonstrum.jxl" style="width: 50vh; height: auto; border: 5px solid rgb(37, 37, 37)">
-                    </picture>
-                </div>
-            </div>
-            <h4 style="text-align: right;">©Pinggography. Alle Rechte vorbehalten.</h4>
-        </div>
-
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const elements = document.querySelectorAll('.fromleft, .fromright');
-                
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('visible')
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                }, { threshold: 0.15});
-                elements.forEach(el => observer.observe(el));
-            });
-        </script>
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const navbar = document.getElementById('navbar');
-                if (sessionStorage.getItem('fromInternalPage') === 'true') {
-                    navbar.classList.add('visible');
-                    sessionStorage.removeItem('fromInternalPage');
-                }
-            })
-
-            window.addEventListener('scroll', () => {
-                const navbar = document.getElementById('navbar');
-                if (window.scrollY > 500) {
-                    navbar.classList.add('visible');
-                } else if (!fromInternalPage) {
-                    navbar.classList.remove('visible');
-                }
-            });
-        </script>
-        <script>
-            function getScrollPercent() {
-                var h = document.documentElement,
-                    b = document.body,
-                    st = 'scrollTop',
-                    sh = 'scrollHeight';
-                return (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
-            }
-        </script>
+<div style="margin-top: 60px;">
+<h1>Erreichbar unter: KontaktClemens@gmail.com <br> 
+</h1>        
+        
+        
+     </div>   
+        <h4 style="text-align: right;">©Pinggography. Alle Rechte vorbehalten.</h4>
+        <script>sessionStorage.setItem('fromInternalPage', 'true');</script>
     </body>
 </html>

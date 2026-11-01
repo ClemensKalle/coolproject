@@ -149,7 +149,7 @@ a:link {
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #3b3b3b;
+  border: 3px solid #3b3b3b;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
@@ -170,16 +170,14 @@ input[type=submit]:hover {
 }
 
 .container {
-  border-radius: 5px;
   background-color: #1b1b1b;
-  padding: 10px;
 }
 
 .column {
   float: left;
-  width: 50%;
+  width: 40%;
   margin-top: 6px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .row:after {
