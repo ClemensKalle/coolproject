@@ -64,6 +64,9 @@ div.image {
 .collaps-images {
   cursor: pointer;
   font-family: 'Molgan';
+  display: inline;
+  position: relative;
+  padding-right: 1.5em;
 }
 .cathegory {
   display: flex;
@@ -71,4 +74,19 @@ div.image {
   justify-content: center;
   gap: 10px;
   margin: 0 auto 10px;
+}
+.collaps-images::after {
+  content: "▼";
+  font-size: 0.8em;
+  transition: transform 0.3s ease;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.collaps-images.hidden + .cathegory {
+  display: none;
+}
+.collaps-images.hidden::after {
+  transform: translateY(-50%) rotate(-90deg);
 }

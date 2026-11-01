@@ -154,6 +154,7 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
   background-color: #0e0e0e;
+  color: #ffffff;
 }
 
 input[type=submit] {
