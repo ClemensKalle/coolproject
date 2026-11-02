@@ -1,5 +1,5 @@
 I made a little website for me as a hobby photographer,
-it features a Home page, a Portfolio with some of my work, a at the moment non working contact Page and an About Page with information about me as a person.  <br>
+it features a Home page, a Portfolio with some of my work, a contact Page that does work, but its disabled because some people spamed it and now I almost hit the limit of monthly messages I can recieve before I have to upgrade to a higher tier subscription and an About Page with information about me as a person.  <br>
 This is very work in progress right now and will be worked on for a long time.  <br>
 I made it using Visual Studio Code and html, css and java script  <br>
 Photography Content on Social media: https://instagram.com/pinggography  <br>
