@@ -13,6 +13,8 @@ Home Page:
 ![image](Screenshots/index.png)
 Portfolio Page:  
 ![image](Screenshots/portfolio.png)
+Blog Page:
+![image](Screenshots/blog.png)
 Contact Page:  
 ![image](Screenshots/contact.png)
 About Page:  
