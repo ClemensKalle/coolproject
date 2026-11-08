@@ -18,3 +18,4 @@ Contact Page:
 About Page:  
 ![image](Screenshots/about.png)  
 ©Pinggography. Alle Rechte vorbehalten.
+©Pinggography. All rights reserved.
