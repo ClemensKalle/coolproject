@@ -1,8 +1,13 @@
-I made a little website for me as a hobby photographer,
-it features a Home page, a Portfolio with some of my work, a contact Page that does work, but its disabled because some people spamed it and now I almost hit the limit of monthly messages I can recieve before I have to upgrade to a higher tier subscription and an About Page with information about me as a person.  <br>
-This is very work in progress right now and will be worked on for a long time.  <br>
-I made it using Visual Studio Code and html, css and java script  <br>
-Photography Content on Social media: https://instagram.com/pinggography  <br>
+Hello GitHub, HackClub Reviewer and Cloveian :3, <br>
+Welcome to Pinggography - aka me! <br>
+I am a small hobby Photographer that posts some pictures to their Instagram <br>
+Why you might ask, <br>
+Because it's fun, silly! <br>
+So I heard from this project, <br> 
+Terra at HackClub <br>
+and I decided that I could make a little website for me as a Photographer to use as a Portfolio and for posting my work! <br>
+The website will also get more Pages like one for my other Projects! <br>
+So, sit down, grab a drink and visit https://clemenskalle.github.io/coolproject ! 
 How to run: open https://clemenskalle.github.io/coolproject  <br>
 Home Page:  
 ![image](Screenshots/index.png)
