@@ -10,6 +10,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: x-large;
   justify-content: center;
+  justify-items: center;
 }
 #navbar {
   position: fixed;
@@ -66,4 +67,18 @@ a:link {
   font-size:2vmax;
   font-family: 'Molgan';
   src: url('Fonts/Molgan.otf') format('opentype');
+}
+a.blogpost img {
+  width: auto;
+  height: 23vh;
+  border: 5px solid rgb(255, 255, 255);
+  border-bottom: 70px solid rgb(255, 255, 255);
+  align-items: flex-start;
+}
+a.blogpost {
+  align-items: flex-end;
+}
+div.realbody {
+    display: grid;
+    text-align: center;
 }
