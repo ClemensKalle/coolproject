@@ -63,7 +63,6 @@ div.articlethumbnail {
 }
 a:link {
   color:#ff0404;
-  text-decoration: underline;
   font-size:2vmax;
   font-family: 'Molgan';
   src: url('Fonts/Molgan.otf') format('opentype');
@@ -72,7 +71,7 @@ a.blogpost img {
   width: auto;
   height: 23vh;
   display: block;
-  align-items: center;
+  align-items: center;  
 }
 a.blogpost {
   align-items: flex-end;
