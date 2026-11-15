@@ -34,14 +34,12 @@ body {
   justify-content: center;
   gap: 2rem;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 #navbar a {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 #navbar.visible {
   opacity: 1;
@@ -49,20 +47,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 div.blog {
-    margin-top: 70px;
-    border-left: 50px;
-    border-right: 50px;
-    justify-content: center;
-    justify-self: center;
-    justify-items: center;
+  margin-top: 70px;
+  border-left: 50px;
+  border-right: 50px;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
 }
 div.articlethumbnail {
-    justify-content: center;
-    justify-self: center;
-    justify-items: center;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
 }
 a:link {
-  color:#ff0404;
   font-size:2vmax;
   font-family: 'Molgan';
   src: url('Fonts/Molgan.otf') format('opentype');
@@ -78,8 +75,8 @@ a.blogpost {
   display: flex;
 }
 div.realbody {
-    display: grid;
-    text-align: center;
+  display: grid;
+  text-align: center;
 }
 a.blogpost .articlethumbnail {
   display: inline-block;
@@ -87,6 +84,7 @@ a.blogpost .articlethumbnail {
   padding: 5px 5px 0;
   text-align: center;
   align-items: center;
+  border-radius: 5px;
 }
 a.blogpost .articlethumbnail p{
   margin: 0;
@@ -96,4 +94,17 @@ a.blogpost .articlethumbnail p{
 }
 p.list {
   align-items: left;
+}
+div.bloglist {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  border-left: 50px;
+  border-right: 50px;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+}
+div.articlethumbnail {
+  margin: 10px;
 }

@@ -99,7 +99,6 @@ div.nextop {
   transition: all 0.5s ease;
   z-index: 1000;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 #navbar ul {
   list-style: none;
@@ -109,20 +108,17 @@ div.nextop {
   justify-content: center;
   gap: 2rem;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 #navbar a {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 #navbar.visible {
   opacity: 1;
   transform: translateY(0);
   font-family: Arial, Helvetica, sans-serif;
-
 }
 center {
   display: flex;
@@ -146,7 +142,6 @@ a:link {
 * {
   box-sizing: border-box;
 }
-
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -157,7 +152,6 @@ input[type=text], select, textarea {
   background-color: #0e0e0e;
   color: #ffffff;
 }
-
 input[type=submit] {
   background-color:  rgb(61, 37, 0);
   color: white;
@@ -165,28 +159,23 @@ input[type=submit] {
   border: none;
   cursor: pointer;
 }
-
 input[type=submit]:hover {
   background-color:  rgb(61, 37, 0);
 }
-
 .container {
   background-color: #1b1b1b;
 }
-
 .column {
   float: left;
   width: 40%;
   margin-top: 6px;
   padding: 10px;
 }
-
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 @media screen and (max-width: 600px) {
   .column, input[type=submit] {
     width: 100%;

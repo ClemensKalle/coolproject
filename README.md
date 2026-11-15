@@ -6,6 +6,7 @@ Because it's fun, silly! <br>
 So I heard from this project, <br> 
 Terra at HackClub <br>
 and I decided that I could make a little website for me as a Photographer to use as a Portfolio and for posting my work! <br>
+The website also now features a blog page where you can read about me rennovating or my fist game jam! <br>
 The website will also get more Pages like one for my other Projects! <br>
 So, sit down, grab a drink and visit https://clemenskalle.github.io/coolproject ! 
 How to run: open https://clemenskalle.github.io/coolproject  <br>
