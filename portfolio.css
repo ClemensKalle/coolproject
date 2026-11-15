@@ -98,3 +98,35 @@ div.image {
   border-bottom: 15px solid rgb(255, 255, 255);
   border-radius: 5px;
 }
+#cathegory {
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 1rem;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 0.5s ease;
+  z-index: 1000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#cathegory ul {
+  list-style: none;
+  margin: 0;
+  padding:0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#cathegory a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border-color: white;
+}
+#cathegory.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

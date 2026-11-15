@@ -94,3 +94,6 @@ a.blogpost .articlethumbnail p{
   color: #1b1b1b;
   font-size: 2rem;
 }
+p.list {
+  align-items: left;
+}
